@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0%;
+    background-color: #efefef;
+}
+
+header {
+    color: white;
+    padding: 10px;
+    border: none;
+    background-color: #63A3EF;
+}
+
+.btn-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.hide {
+    display: none;
+}
+#start-button {
+    margin-top: 15%;
+    height: 70px;
+    width: 200px;
+    border-radius: 10px;
+    border: none;
+    background-color: #63A3EF;
+}
