@@ -1,7 +1,9 @@
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    margin: 0%;
+    margin: 0;
     background-color: #efefef;
 }
 
@@ -10,6 +12,9 @@ header {
     padding: 10px;
     border: none;
     background-color: #63A3EF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn-container {
@@ -22,6 +27,7 @@ header {
 .hide {
     display: none;
 }
+
 #start-button {
     margin-top: 15%;
     height: 70px;
@@ -29,4 +35,12 @@ header {
     border-radius: 10px;
     border: none;
     background-color: #63A3EF;
+    font-family:'Inter', sans-serif;;
+    font-size: larger;
+    font-weight: 500;
+}
+
+header img {
+    height: 50px; 
+    width: auto; 
 }
