@@ -5,84 +5,88 @@ const answerButtons = document.getElementById('answer-buttons');
 const resultContainer = document.getElementById('result-container');
 const resultText = document.getElementById('result-text');
 const restartButton = document.getElementById('restart-button');
+const maiorQue2 = document.getElementById('maiorQue2');
 
 let currentQuestionIndex = 0;
 let score = 0;
 
-const questions = [
-    {
-        question: "Qual é a capital do Brasil?",
-        answers: [
-            { text: "Rio de Janeiro", correct: false },
-            { text: "Brasília", correct: true },
-            { text: "São Paulo", correct: false },
-            { text: "Salvador", correct: false }
-        ]
-    },
-    {
-        question: "a",
-        answers: [
-            { text: "a", correct: true },
-            { text: "b", correct: false },
-            { text: "c", correct: false },
-            { text: "d", correct: false }
-        ]
-    },
-    {
-        question: "a",
-        answers: [
-            { text: "a", correct: true },
-            { text: "b", correct: false },
-            { text: "c", correct: false },
-            { text: "d", correct: false }
-        ]
-    },
-    {
-        question: "a",
-        answers: [
-            { text: "a", correct: true },
-            { text: "b", correct: false },
-            { text: "c", correct: false },
-            { text: "d", correct: false }
-        ]
-    },
-    {
-        question: "a",
-        answers: [
-            { text: "a", correct: true },
-            { text: "b", correct: false },
-            { text: "c", correct: false },
-            { text: "d", correct: false }
-        ]
-    },
-    {
-        question: "a",
-        answers: [
-            { text: "a", correct: true },
-            { text: "b", correct: false },
-            { text: "c", correct: false },
-            { text: "d", correct: false }
-        ]
-    },
-    {
-        question: "a",
-        answers: [
-            { text: "a", correct: true },
-            { text: "b", correct: false },
-            { text: "c", correct: false },
-            { text: "d", correct: false }
-        ]
-    },
-    {
-        question: "a",
-        answers: [
-            { text: "a", correct: true },
-            { text: "b", correct: false },
-            { text: "c", correct: false },
-            { text: "d", correct: false }
-        ]
-    }
-];
+const allQuestions = [
+
+        {
+            question: "Qual é a capital do Brasil?",
+            answers: [
+                { text: "Rio de Janeiro", correct: false },
+                { text: "Brasília", correct: true },
+                { text: "São Paulo", correct: false },
+                { text: "Salvador", correct: false }
+            ]
+        },
+        {
+            question: "VIADO",
+            answers: [
+                { text: "a", correct: true },
+                { text: "b", correct: false },
+                { text: "c", correct: false },
+                { text: "d", correct: false }
+            ]
+        },
+        {
+            question: "AO",
+            answers: [
+                { text: "a", correct: true },
+                { text: "b", correct: false },
+                { text: "c", correct: false },
+                { text: "d", correct: false }
+            ]
+        },
+        {
+            question: "DMS",
+            answers: [
+                { text: "a", correct: true },
+                { text: "b", correct: false },
+                { text: "c", correct: false },
+                { text: "d", correct: false }
+            ]
+        },
+        {
+            question: "SERA",
+            answers: [
+                { text: "a", correct: true },
+                { text: "b", correct: false },
+                { text: "c", correct: false },
+                { text: "d", correct: false }
+            ]
+        },
+        {
+            question: "Q",
+            answers: [
+                { text: "a", correct: true },
+                { text: "b", correct: false },
+                { text: "c", correct: false },
+                { text: "d", correct: false }
+            ]
+        },
+        {
+            question: "SIM",
+            answers: [
+                { text: "a", correct: true },
+                { text: "b", correct: false },
+                { text: "c", correct: false },
+                { text: "d", correct: false }
+            ]
+        },
+        {
+            question: "NAO",
+            answers: [
+                { text: "a", correct: true },
+                { text: "b", correct: false },
+                { text: "c", correct: false },
+                { text: "d", correct: false }
+            ]
+        }
+    ];
+
+const questions = shuffle(allQuestions).slice(0, 4);
 
 startButton.addEventListener('click', startQuiz);
 restartButton.addEventListener('click', () => {
@@ -121,6 +125,7 @@ function clearAnswerButtons() {
 function selectAnswer(correct) {
     if (correct) {
         score++;
+        
     }
     currentQuestionIndex++;
     if (currentQuestionIndex < questions.length) {
@@ -131,7 +136,19 @@ function selectAnswer(correct) {
 }
 
 function showResult() {
+    maiorQue2.classList.add('hide');
     questionContainer.classList.add('hide');
     resultContainer.classList.remove('hide');
     resultText.innerText = `Você acertou ${score} de ${questions.length} perguntas.`;
+    if (score > 2) {
+       maiorQue2.classList.remove('hide');
+    }
+}
+
+function shuffle(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
 }
