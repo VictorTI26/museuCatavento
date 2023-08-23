@@ -46,6 +46,7 @@ header {
     z-index: 1;
     padding: 20px;
     color: black;
+    margin-inline: 10px;
 }
 
 #start-button {
