@@ -51,10 +51,10 @@ const allQuestions = [
         {
             question: "Qual seção do museu aborda astronomia e sistema Solar?",
             answers: [
-                { text: "Universo", correct: true },
+                { text: "Sociedade", correct: false },
                 { text: "Vida", correct: false },
                 { text: "Engenho", correct: false },
-                { text: "Sociedade", correct: false }
+                { text: "Universo", correct: true }
             ]
         },
         {
@@ -70,8 +70,8 @@ const allQuestions = [
             question: "O que é um catavento, em termos simbólicos?",
             answers: [
                 { text: "Uma ferramenta de cozinha", correct: false },
-                { text: "Um dispositivo que gira ao vento", correct: true },
                 { text: "Um brinquedo para crianças", correct: false },
+                { text: "Um dispositivo que gira ao vento", correct: true },
                 { text: "Um tipo de instrumento musical", correct: false }
             ]
         },
@@ -116,8 +116,8 @@ const allQuestions = [
             answers: [
                 { text: "Apenas uma atração turística", correct: false },
                 { text: "Um local de pesquisa científica", correct: false },
-                { text: "Um espaço cultural e educacional", correct: true },
-                { text: "Um centro esportivo", correct: false }
+                { text: "Um centro esportivo", correct: false },
+                { text: "Um espaço cultural e educacional", correct: true }
             ]
         }
     ];
