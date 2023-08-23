@@ -116,6 +116,10 @@ header img {
         margin-top: 20%;
     }
     #name{
-        margin-inline: 10%;
+        margin-inline: 7%;
+    }
+    #escolaS{
+        width: 40%;
+        height: 50%;
     }
 }  
