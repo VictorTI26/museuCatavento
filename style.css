@@ -103,4 +103,5 @@ header img {
 #name{
     font-family:'Rubik', sans-serif;
     font-size: 12px;
+    margin-inline: 10px;
 }
