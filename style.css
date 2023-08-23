@@ -82,7 +82,7 @@ header img {
 
 #result-text {
     margin-inline: 20px;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bolder;
     font-family:'Rubik', sans-serif;
 }
@@ -121,5 +121,9 @@ header img {
     #escolaS{
         width: 40%;
         height: 50%;
+    }
+    #maiorQue2{
+        width: 50%;
+        height: 65%;
     }
 }  
