@@ -111,3 +111,8 @@ header img {
     height: 40%;
     margin-top: 5%;
 }
+@media only screen and (max-width: 750px)  {
+    #start-button{
+        margin-top: 20%;
+    }
+}  
