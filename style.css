@@ -54,7 +54,7 @@ header {
 #start-button {
     margin-top: 10%;
     height: 85px;
-    width: 270px;
+    width: 200px;
     border-radius: 10px;
     border: none;
     background-color: #63A3EF;
@@ -62,7 +62,7 @@ header {
     font-size: larger;
     font-weight: 500;
     cursor: pointer;
-    font-size: 60px;
+    font-size: 40px;
     color: black;
 }
 
