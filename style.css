@@ -88,8 +88,8 @@ header img {
 }
 
 #maiorQue2 {
-    font-size: 50px;
-    font-family:'Rubik', sans-serif;
+    width: 30%;
+    height: 40%;
 }
 
 #answer-btn{position:relative;top:0}
