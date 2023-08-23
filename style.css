@@ -115,4 +115,7 @@ header img {
     #start-button{
         margin-top: 20%;
     }
+    #name{
+        margin-inline: 10%;
+    }
 }  
