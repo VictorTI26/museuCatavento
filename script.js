@@ -13,75 +13,111 @@ let score = 0;
 const allQuestions = [
 
         {
-            question: "Qual é a capital do Brasil?",
+            question: "Qual é o foco do Museu Catavento?",
             answers: [
-                { text: "Rio de Janeiro", correct: false },
-                { text: "Brasília", correct: true },
-                { text: "São Paulo", correct: false },
-                { text: "Salvador", correct: false }
+                { text: "Adultos", correct: false },
+                { text: "Idosos", correct: true },
+                { text: "Crianças e jovens", correct: false },
+                { text: "Bebês", correct: false }
             ]
         },
         {
-            question: "VIADO",
+            question: "Qual é a missão do Museu Catavento?",
             answers: [
-                { text: "a", correct: true },
-                { text: "b", correct: false },
-                { text: "c", correct: false },
-                { text: "d", correct: false }
+                { text: "Promover shows musicais", correct: true },
+                { text: "Tornar o mundo científico acessível para todas as idades", correct: false },
+                { text: "Fornecer alimentos saudáveis", correct: false },
+                { text: "d) Oferecer atividades esportivas", correct: false }
             ]
         },
         {
-            question: "AO",
+            question: "Quantas instalações interativas o Museu Catavento possui?",
             answers: [
-                { text: "a", correct: true },
-                { text: "b", correct: false },
-                { text: "c", correct: false },
-                { text: "d", correct: false }
+                { text: "35", correct: true },
+                { text: "184", correct: false },
+                { text: "219", correct: false },
+                { text: "323", correct: false }
             ]
         },
         {
-            question: "DMS",
+            question: "Qual é a localização do Museu Catavento?",
             answers: [
-                { text: "a", correct: true },
-                { text: "b", correct: false },
-                { text: "c", correct: false },
-                { text: "d", correct: false }
+                { text: "Avenida Mercúrio, Parque Dom Pedro III", correct: true },
+                { text: "Avenida dos Museus, Centro de Ciências", correct: false },
+                { text: "Rua das Artes, Praça Científica", correct: false },
+                { text: "Rua da Cultura, Parque das Ciências", correct: false }
             ]
         },
         {
-            question: "SERA",
+            question: "Qual seção do museu aborda astronomia e sistema Solar?",
             answers: [
-                { text: "a", correct: true },
-                { text: "b", correct: false },
-                { text: "c", correct: false },
-                { text: "d", correct: false }
+                { text: "Universo", correct: true },
+                { text: "Vida", correct: false },
+                { text: "Engenho", correct: false },
+                { text: "Sociedade", correct: false }
             ]
         },
         {
-            question: "Q",
+            question: "Qual seção do museu tem exposições sobre a origem da vida?",
             answers: [
-                { text: "a", correct: true },
-                { text: "b", correct: false },
-                { text: "c", correct: false },
-                { text: "d", correct: false }
+                { text: "Universo", correct: true },
+                { text: "Vida", correct: false },
+                { text: "Engenho", correct: false },
+                { text: "Sociedade", correct: false }
             ]
         },
         {
-            question: "SIM",
+            question: "O que é um catavento, em termos simbólicos?",
             answers: [
-                { text: "a", correct: true },
-                { text: "b", correct: false },
-                { text: "c", correct: false },
-                { text: "d", correct: false }
+                { text: "Uma ferramenta de cozinha", correct: true },
+                { text: "Um dispositivo que gira ao vento", correct: false },
+                { text: "Um brinquedo para crianças", correct: false },
+                { text: "Um tipo de instrumento musical", correct: false }
             ]
         },
         {
-            question: "NAO",
+            question: "Além de educação científica, qual outro valor o Museu Catavento promove?",
             answers: [
-                { text: "a", correct: true },
-                { text: "b", correct: false },
-                { text: "c", correct: false },
-                { text: "d", correct: false }
+                { text: "Atividades esportivas", correct: true },
+                { text: "Alimentação saudável", correct: false },
+                { text: "Divulgação científica", correct: false },
+                { text: "Ensino de idiomas", correct: false }
+            ]
+        },
+        {
+            question: "O que representa o nome Catavento em relação ao museu?",
+            answers: [
+                { text: "Movimento, mudança e descoberta", correct: true },
+                { text: "Estabilidade e tradição", correct: false },
+                { text: "Religião e espiritualidade", correct: false },
+                { text: "Competição e rivalidade", correct: false }
+            ]
+        },
+        {
+            question: "Qual é a área total do prédio do Museu Catavento?",
+            answers: [
+                { text: "6 mil metros quadrados", correct: true },
+                { text: "12 mil metros quadrados", correct: false },
+                { text: "18 mil metros quadrados", correct: false },
+                { text: "24 mil metros quadrados", correct: false }
+            ]
+        },
+        {
+            question: "Qual é o objetivo principal das exposições interativas do Museu Catavento?",
+            answers: [
+                { text: "Entretenimento puro", correct: true },
+                { text: "Explorar campos do conhecimento", correct: false },
+                { text: "Venda de produtos", correct: false },
+                { text: "Treinamento profissional", correct: false }
+            ]
+        },
+        {
+            question: "Qual é o significado do Museu Catavento para a cidade de São Paulo?",
+            answers: [
+                { text: "Apenas uma atração turística", correct: true },
+                { text: "Um local de pesquisa científica", correct: false },
+                { text: "Um espaço cultural e educacional", correct: false },
+                { text: "Um centro esportivo", correct: false }
             ]
         }
     ];

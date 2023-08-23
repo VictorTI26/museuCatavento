@@ -30,7 +30,7 @@ header {
 }
 
 #question-text {
-    font-size: 50px;
+    font-size: 30px;
     font-family:'Ruwudu', sans-serif;;
     font-weight: bolder;    
 }
@@ -41,8 +41,10 @@ header {
     cursor: pointer;
     border: none;
     border-radius: 10px;
-    font-size: 35px;
+    font-size: 15px;
     z-index: 1;
+    padding: 20px;
+    margin-bottom: 5px;
 }
 
 #start-button {
