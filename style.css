@@ -38,7 +38,8 @@ header {
 }
 
 .answer-btn {
-    background-color: #63A3EF;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
     cursor: pointer;
     border: none;
     border-radius: 10px;
@@ -87,12 +88,12 @@ header img {
 }
 
 #maiorQue2 {
-    width: 35%;
-    height: 45%;
+    width: 50%;
+    height: 60%;
 }
 
-.answer-btn{position:relative;top:0}
-.answer-btn:hover{top:-4px;box-shadow:0 4px 4px #999;
+#answer-btn{position:relative;top:0}
+#answer-btn:hover{top:-4px;box-shadow:0 4px 4px #999;
    transition: all .2s ease-in-out}
 
 
