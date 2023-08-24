@@ -17,12 +17,13 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    border-bottom: 0.2em solid #eb813a; 
+    margin-bottom: 20%;
 }
 
 .btn-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 5px;
     margin-top: 20px;
 }
 
@@ -35,26 +36,26 @@ header {
     font-family:'Rubik', sans-serif;
     font-weight: bolder;    
     margin-inline: 10px;
+    padding: 20px;
 }
 
 .answer-btn {
-    background-color: #0093E9;
-    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    background-color: #63A3EF;
     cursor: pointer;
     border: none;
     border-radius: 10px;
     font-size: 15px;
     z-index: 1;
-    padding: 20px;
+    padding: 25px;
     color: black;
-    margin-inline: 5px;
-    margin-block: 5px;
+    margin-inline: 7px;
+    margin-block: 7px;
 }
 
 #start-button {
-    margin-top: 15%;
+    margin-top: 20%;
     height: 85px;
-    width: 270px;
+    width: 200px;
     border-radius: 10px;
     border: none;
     background-color: #63A3EF;
@@ -62,7 +63,7 @@ header {
     font-size: larger;
     font-weight: 500;
     cursor: pointer;
-    font-size: 60px;
+    font-size: 25px;
     color: black;
 }
 
@@ -82,18 +83,19 @@ header img {
 
 #result-text {
     margin-inline: 20px;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: bolder;
     font-family:'Rubik', sans-serif;
 }
 
 #maiorQue2 {
-    width: 50%;
-    height: 60%;
+    margin-bottom: 20px;
+    width: 45%;
+    height: 55%;
 }
 
-#answer-btn{position:relative;top:0}
-#answer-btn:hover{top:-4px;box-shadow:0 4px 4px #999;
+.answer-btn{position:relative;top:0}
+.answer-btn:hover{top:-4px;box-shadow:0 4px 4px #999;
    transition: all .2s ease-in-out}
 
 
@@ -104,4 +106,27 @@ header img {
 #name{
     font-family:'Rubik', sans-serif;
     font-size: 12px;
+    margin-inline: 10px;
+    margin-top: 10%;
 }
+#escolaS{
+    width: 30%;
+    height: 40%;
+    margin-top: 10%;
+}
+@media only screen and (max-width: 750px)  {
+    #start-button{
+        margin-top: 20%;
+    }
+    #name{
+        margin-inline: 7%;
+    }
+    #escolaS{
+        width: 40%;
+        height: 50%;
+    }
+    #maiorQue2{
+        width: 50%;
+        height: 65%;
+    }
+}  

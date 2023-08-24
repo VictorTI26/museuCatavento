@@ -6,6 +6,8 @@ const resultContainer = document.getElementById('result-container');
 const resultText = document.getElementById('result-text');
 const restartButton = document.getElementById('restart-button');
 const maiorQue2 = document.getElementById('maiorQue2');
+const escolaS = document.getElementById('escolaS');
+const name = document.getElementById('name')
 
 let currentQuestionIndex = 0;
 let score = 0;
@@ -136,6 +138,8 @@ function startQuiz() {
     score = 0;
     startButton.classList.add('hide');
     questionContainer.classList.remove('hide');
+    escolaS.classList.add('hide');
+    name.classList.add('hide')
     showQuestion();
 }
 
